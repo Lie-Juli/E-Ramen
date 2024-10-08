@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-image: url(Assets/bg\ ERamen.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+}
+
+nav{
+    background-color: #C43007;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    flex: 1;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li{
+    padding: 15px 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+}
+
+.content h1{
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.5vw;
+    z-index: 2;
+}
+
+.content img{
+    width: 15%;
+    float: left;
+    margin-right: 20px;
+}
+
+.shoyu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    width: 90%;
+}
+
+.miso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    width: 90%;
+}
+
+.tonkostsu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    width: 90%;
+}
+
+.shio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    width: 90%;
+}
+
+.ebi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    width: 90%;
+}
+
+.shiitake{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    width: 90%;
+}
+
+.vegetable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    width: 90%;
+}
+
+.renkon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    width: 90%;
+}
+
+.anago{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    width: 90%;
+}
+
+.gyoza{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    width: 90%;
+}
+
+.text{
+    color: white;
+}
+
+.text h2{
+    font-size: 2vw;
+}
+
+.text p{
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.drinks{
+    display: flex;
+    justify-content: center;
+}
+
+.drinks img{
+    width: 100%;
+    padding: 10px 50px;
+}
+
+.drinks h2{
+    color: white;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: #C43007;
+    padding: 20px;
+    position: sticky;
+    top: 100%;
+    margin-top: 50px;
+}
+
+footer a{
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu{
+        margin-top: 15px;
+        display: none;
+    }
+
+    .toggle{
+        position: absolute;
+        color: white;
+        top: 60px;
+        right: 30px;
+    }
+
+    .toggle input{
+        position: absolute;
+        width: 22px;
+        height: 25px;
+        left: -1px;
+        top: -10px;
+        opacity: 0;
+    }
+
+    .menu.active, .toggle{
+        display: block;
+    }
+
+    .content h1{
+        font-size: 5vw;
+    }
+
+    .content img{
+        width: 30%;
+    }
+
+    .shoyu{
+        margin: 20px auto;
+    }
+
+    .miso{
+        margin: 20px auto;
+    }
+
+    .tonkostsu{
+        margin: 20px auto;
+    }
+
+    .shio{
+        margin: 20px auto;
+    }
+
+    .ebi{
+        margin: 20px auto;
+    }
+
+    .shiitake{
+        margin: 20px auto;
+    }
+    
+    .vegetable{
+        margin: 20px auto;
+    }
+
+    .renkon{
+        margin: 20px auto;
+    }
+
+    .anago{
+        margin: 20px auto;
+    }
+
+    .gyoza{
+        margin: 20px auto;
+    }
+
+    .text h2{
+        font-size: 4vw;
+    }
+
+    .text p{
+        font-size: 2.3vw;
+        font-weight: bold;
+    }
+
+    .drinks img{
+        padding: 10px 10px;
+    }
+
+    .drinks h2{
+        font-size: 4vw;
+    }
+}

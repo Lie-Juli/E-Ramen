@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-image: url(Assets/bg\ ERamen.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+}
+
+nav{
+    background-color: #C43007;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    flex: 1;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li{
+    padding: 15px 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+}
+
+.content h1{
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.5vw;
+    z-index: 2;
+}
+
+.content img{
+    margin-top: 50px;
+    padding: 10px 150px;
+}
+
+.promotion-banner{
+    display: flex;
+    justify-content: center;
+}
+
+.promotion-banner img{
+    width: 75%;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.product1{
+    display: flex;
+    justify-content: center;
+}
+
+.product2{
+    display: flex;
+    justify-content: center;
+}
+
+.product1 img{
+    width: 100%;
+}
+
+.product1 p{
+    text-align: center;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.product2 img{
+    width: 100%;
+}
+
+.product2 p{
+    text-align: center;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.partnership{
+    display: flex;
+    justify-content: center;
+}
+
+.partnership img{
+    width: 65%;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+footer{
+    text-align: center;
+    background-color: #C43007;
+    padding: 20px;
+    position: sticky;
+    top: 100%;
+    margin-top: 50px;
+}
+
+footer a{
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu{
+        margin-top: 15px;
+        display: none;
+    }
+
+    .toggle{
+        position: absolute;
+        color: white;
+        top: 60px;
+        right: 30px;
+    }
+
+    .toggle input{
+        position: absolute;
+        width: 22px;
+        height: 25px;
+        left: -1px;
+        top: -10px;
+        opacity: 0;
+    }
+
+    .menu.active, .toggle{
+        display: block;
+    }
+
+    .content h1{
+        font-size: 4vw;
+    }
+
+    .content img{
+        margin-top: 30px;
+        padding: 10px 30px;
+    }
+
+    .promotion-banner img{
+        width: 90%;
+    }
+
+    .product1 p{
+        font-size: 2.5vw;
+    }
+
+    .product2 p{
+        font-size: 2.5vw;
+    }
+
+    .partnership img{
+        width: 85%;
+    }
+}

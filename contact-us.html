@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact-us.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="Assets/Logo Home.svg" alt=""></a>
+        </div>
+        <div class="toggle">
+            <input type="checkbox">
+            <i class="gg-menu"></i></a>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Product.html">Product</a></li>
+            <li><a href="Promotion.html">Promotion</a></li>
+            <li><a href="About-Us.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="form-container">
+        <div class="form">
+            <h1>Contact Us</h1>
+            <form action="" onsubmit="validation()">
+                <h2>Full Name</h2>
+                <input type="text" class="input-field" id="name" placeholder="Your Full Name">
+                <h2>Email</h2>
+                <input type="text" class="input-field" id="email" placeholder="Your Email">
+                <h2>Phone Number</h2>
+                <input type="number" class="input-field" id="phone" placeholder="Your Phone Number" onlyke>
+                <h2>Preferences</h2>
+                <div class="select-menu">
+                    <div class="select-btn">
+                        <span class="sBtn-text">Select Preference</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </div>
+                    <ul class="options">
+                        <li class="option">
+                            <span class="option-text">Ramen</span>
+                        </li>
+                        <li class="option">
+                            <span class="option-text">Dry Ramen</span>
+                        </li>
+                    </ul>
+                </div>
+                <h2>Message</h2>
+                <textarea type="text" class="input-field message" id="message" placeholder="Your Message"></textarea>
+                <div class="check">
+                    <input type="checkbox" id="checkbox">
+                    <h4>Agree to receive newsletter from E Ramen</h4>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <a href="contact-us.html">Contact Us</a>
+    </footer>
+
+    <script src="contact-us.js"></script>
+</body>
+</html>

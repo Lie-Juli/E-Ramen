@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-image: url(Assets/bg\ ERamen.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+nav{
+    background-color: #C43007;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    flex: 1;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li{
+    padding: 15px 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+
+.form-container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 80%;
+    height: 85%;
+    position: relative;
+}
+
+.form::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #27213C;
+    opacity: .7;
+    z-index: -10;
+    border-radius: 25px;
+}
+
+.form h1{
+    text-align: center;
+    color: white;
+    font-size: 2.5vw;
+    margin-top: 30px;
+}
+
+.form h2{
+    color: white;
+    font-size: 1.5vw;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.input-field{
+    width: 80%;
+    height: 40px;
+    margin-top: 5px;
+    border: 1px solid black;
+}
+
+.message{
+    height: 90px;
+    padding-top: 5px;
+}
+
+.select-menu{
+    width: 15%;
+    margin-left: 50px;
+}
+
+.select-menu .select-btn{
+    display: flex;
+    height: 20px;
+    background: white;
+    color: grey;
+    padding: 20px;
+    font-size: 1vw;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+}
+
+.select-menu .options{
+    position: relative;
+    padding: 5px;
+    margin-top: 3px;
+    border-radius: 8px;
+    background: white;
+    display: none;
+}
+
+.select-menu.active .options{
+    display: block;
+    position: relative;
+}
+
+.options .option{
+    display: flex;
+    height: 23px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+
+.option .option-text{
+    font-size: .9vw;
+    color: black;
+}
+
+.check{
+    margin-top: 10px;
+    display: flex;
+}
+
+.check input{
+    margin-left: 50px;
+}
+
+.check h4{
+    color: white;
+    margin-left: 10px;
+    font-size: 1vw;
+}
+
+.form button{
+    background-color: #C43007;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+footer{
+    text-align: center;
+    background-color: #C43007;
+    padding: 20px;
+    position: sticky;
+    top: 100%;
+    margin-top: 50px;
+}
+
+footer a{
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.input-group span{
+    position: absolute;
+    color: red;
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu{
+        margin-top: 15px;
+        display: none;
+    }
+
+    .toggle{
+        position: absolute;
+        color: white;
+        top: 60px;
+        right: 30px;
+    }
+
+    .toggle input{
+        position: absolute;
+        width: 22px;
+        height: 25px;
+        left: -1px;
+        top: -10px;
+        opacity: 0;
+    }
+
+    .menu.active, .toggle{
+        display: block;
+    }
+
+    .form h1{
+        font-size: 5vw;
+    }
+
+    .form h2{
+        margin-left: 20px;
+        font-size: 4vw;
+    }
+
+    .input-field{
+        margin-left: 20px;
+    }
+
+    .select-menu{
+        width: 30%;
+        margin-left: 20px;
+    }
+
+    .select-menu .select-btn{
+        font-size: 2.5vw;
+        padding: 20px;
+    }
+
+    .option .option-text{
+        font-size: 2.4vw;
+    }
+
+    .check input{
+        margin-left: 20px;
+    }
+
+    .check h4{
+        font-size: 2.5vw;
+    }
+
+    .form button{
+        margin-left: 20px;
+    }
+}
